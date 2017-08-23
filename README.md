@@ -1,2 +1,3 @@
-# Stata-Programs
-This repository contains my ado programs written in Stata.
+## Stata-Programs
+
+This repository contains programs that I wrote for my graduate economics courses. 
