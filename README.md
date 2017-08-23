@@ -1,3 +1,3 @@
-## Stata-Programs
+## Stata
 
-This repository contains programs that I wrote for my graduate economics courses. 
+This repository contains Stata programs that I wrote for my graduate economics courses. 
