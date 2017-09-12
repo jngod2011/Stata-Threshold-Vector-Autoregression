@@ -4,6 +4,7 @@ This respository contains a Stata Threshold Vector Auto-regression program packa
 
 ## List of Programs:
 The .zip file contains:
+
 |     | File Name                                  | Description                                                                                                      |
 |-----|--------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | 1.  | prog/installation.do                       | Initialisation of the environment for the program package                                                        |
