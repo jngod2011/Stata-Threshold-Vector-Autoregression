@@ -22,3 +22,7 @@ The .zip file contains:
 | 10. | prog/monte/bootstrap.ado                   | A program to implement bootstrapping re-sampling process                                                         |
 | 11. | prog/monte/normal_simulation.ado           | A program to implement a Monte Carlo Simulation for TVAR using random variables of uniform[0,1] and Normal(0,1)  |
 | 12. | prog/monte/test_normal_simulation.ado      | A wrapper program for implementing the above Monte Carlo simulation                                              |
+
+## Examples:
+
+Please see the help files in prog/help for how the package works.
