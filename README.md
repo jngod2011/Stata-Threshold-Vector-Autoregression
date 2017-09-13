@@ -47,3 +47,71 @@ from the fifth observation to the 200th observation.
 ```
 . TVAR_2r unrate inflation in 5/200, indicator(ind) nlag(1) d(0) constant(1) ols(1)
 ```
+Output:
+```
+. TVAR_2r unrate inflation in 5/200, indicator(ind) nlag(1) d(0) constant(1) ols(1)
+(8 observations deleted)
+
+Threshold Vector Autoregression with 2 Regimes ( TVAR(2) ): Estimation
+Dependent Variables       : unrate inflation
+Indicator Variable        : ind
+Delay Parameter (d)       : 0
+Number of Lags  (nlag)    : 1/1
+Constant?                 : Yes
+Estimation Method         : Ordinary Least Square (OLS) Estimation
+
+Estimation Results:
+
+---------------------------------------------------------------------------
+   Regime      Parms        R^2       RMSE     Sample Size        Success?
+---------------------------------------------------------------------------
+        0          6     0.8927     0.7851              98             Yes
+        1          6     0.9019     0.7513              98             Yes
+No Regime          6     0.9641     0.4532             196             Yes
+---------------------------------------------------------------------------
+
+------------------------------------------------------------------
+Regime         |  Coefficients 
+---------------+--------------------------------------------------
+Regime 0       |
+               |
+unrate:        |
+_cons          |  0.5244
+L1.unrate      |  0.8364
+L1.inflation   |  0.1121
+               |
+inflation:     |
+_cons          |  1.7294
+L1.unrate      | -0.2636
+L1.inflation   |  0.9604
+               |
+---------------+--------------------------------------------------
+Regime 1       |
+               |
+unrate:        |
+_cons          |  0.5231
+L1.unrate      |  0.8369
+L1.inflation   |  0.1119
+               |
+inflation:     |
+_cons          |  1.7266
+L1.unrate      | -0.2666
+L1.inflation   |  0.9648
+               |
+---------------+--------------------------------------------------
+No Regime      |
+               |
+unrate:        |
+_cons          |  0.1607
+L1.unrate      |  0.9369
+L1.inflation   |  0.0542
+               |
+inflation:     |
+_cons          |  0.9716
+L1.unrate      | -0.1600
+L1.inflation   |  0.9955
+               |
+------------------------------------------------------------------
+
+. 
+```
