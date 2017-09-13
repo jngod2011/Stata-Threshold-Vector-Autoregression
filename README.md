@@ -115,3 +115,14 @@ L1.inflation   |  0.9955
 
 . 
 ```
+
+## References
+1. Hansen, B. (1999). Testing for linearity. Journal of Economic Surveys, 13(5):551–576.
+
+2. Hansen, B. E. (1996a). Estimation of TAR Models. Boston College Working Papers in Economics 325., Boston College Department of Economics.
+
+3. Hansen, B. E. (1996b). Inference when a nuisance parameter is not identified under the null hypothesis.  Econometrica, 64(2):413–430.
+
+4. Lo, M. C. and Zivot, E. (2001). Threshold Cointegration And Nonlinear Adjustment To The Law Of One Price. Macroeconomic Dynamics, 5(04):533–576.
+
+5. Tsay, R. S. (1998). Testing and modeling multivariate threshold models. Journal of the American Statistical Association, 93(443):1188–1202.
