@@ -26,7 +26,7 @@ The .zip file contains:
 | 11. | prog/monte/normal_simulation.ado           | A program to implement a Monte Carlo Simulation for TVAR using random variables of uniform[0,1] and Normal(0,1)  |
 | 12. | prog/monte/test_normal_simulation.ado      | A wrapper program for implementing the above Monte Carlo simulation                                              |
 
-## Examples:
+## Example 1: Threshold Vector Autoregression with 2 Regimes ( TVAR(2) ) Estimation
 
 Please install associated files before running examples below.
 
