@@ -28,4 +28,22 @@ The .zip file contains:
 
 ## Examples:
 
-Please see the help files in prog/help for how the package works.
+Please install associated files before running examples below.
+
+### Setup
+```
+. webuse set http://www.stata.com/users/dschenck/
+. webuse usmacro.dta
+```
+
+Assume that observations with an odd index belongs to Regime 1. 
+Other observations belong to Regime 0.
+```
+. gen ind = 0
+. replace ind = 1 if mod(_n,2) == 1
+```
+Fit TVAR(2) by OLS with constant, 1 lag (the default), 0 delay (the default) and dln_m1 being the threshold variable 
+from the fifth observation to the 200th observation.
+```
+. TVAR_2r unrate inflation in 5/200, indicator(ind) nlag(1) d(0) constant(1) ols(1)
+```
