@@ -1,10 +1,11 @@
-## The Threshold Vector-autogression Program Package 
+# The Threshold Vector-autogression Program Package 
 
 This respository contains a Stata Threshold Vector Auto-regression program package.
 
+## .Zip Remarks
 Since structure of file directories is important to the implementation of the package, programs are stored in a .zip file instead of uploading them individually.
 
-## List of Programs:
+## List of Files in TVAR.zip:
 The .zip file contains:
 
 |     | File Name                                  | Description                                                                                                      |
