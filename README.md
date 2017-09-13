@@ -26,7 +26,7 @@ The .zip file contains:
 | 11. | prog/monte/normal_simulation.ado           | A program to implement a Monte Carlo Simulation for TVAR using random variables of uniform[0,1] and Normal(0,1)  |
 | 12. | prog/monte/test_normal_simulation.ado      | A wrapper program for implementing the above Monte Carlo simulation                                              |
 
-## Example 1: Threshold Vector Autoregression with 2 Regimes ( TVAR(2) ) Estimation
+## Example 1: TVAR(2) Estimation
 
 Please install associated files before running examples below.
 
@@ -47,7 +47,7 @@ from the fifth observation to the 200th observation.
 ```
 . TVAR_2r unrate inflation in 5/200, indicator(ind) nlag(1) d(0) constant(1) ols(1)
 ```
-Output:
+### Output:
 ```
 . TVAR_2r unrate inflation in 5/200, indicator(ind) nlag(1) d(0) constant(1) ols(1)
 (8 observations deleted)
@@ -115,7 +115,7 @@ L1.inflation   |  0.9955
 
 . 
 ```
-## Example 2: Threshold Vector Autoregression with 2 Regimes ( TVAR(2) ): Grid Search
+## Example 2: TVAR(2) Grid Search
 
 ### Setup
 ```
@@ -130,8 +130,6 @@ dln_m1 is the threshold variable. Trim is set to 15%. Both lag order and delay p
 ```
 .  TVAR_2r_grid_search dln_gdp dln_m1 if t>=tq(1980q1), threshold(dln_m1) ptrim(0.15) d(1) nlag(1) constant(1) ols(1)
 ```
-Output:
-
 
 ## References
 1. Hansen, B. (1999). Testing for linearity. Journal of Economic Surveys, 13(5):551–576.
