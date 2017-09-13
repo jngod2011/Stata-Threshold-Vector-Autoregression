@@ -115,6 +115,23 @@ L1.inflation   |  0.9955
 
 . 
 ```
+## Example 2: Threshold Vector Autoregression with 2 Regimes ( TVAR(2) ): Grid Search
+
+### Setup
+```
+.  webuse m1gdp
+.  tsset t
+.  drop if ln_m1==.
+.  gen dln_m1 = d.ln_m1
+.  gen dln_gdp = d.ln_gdp
+```
+Perform a grid search for the optimal threshold value for TVAR consisting of dln_gdp and dln_m1 (with constant). 
+dln_m1 is the threshold variable. Trim is set to 15%. Both lag order and delay parameter are set to 1. The estimation is conducted via OLS. We also impose restriction on sample period.
+```
+.  TVAR_2r_grid_search dln_gdp dln_m1 if t>=tq(1980q1), threshold(dln_m1) ptrim(0.15) d(1) nlag(1) constant(1) ols(1)
+```
+Output:
+
 
 ## References
 1. Hansen, B. (1999). Testing for linearity. Journal of Economic Surveys, 13(5):551–576.
