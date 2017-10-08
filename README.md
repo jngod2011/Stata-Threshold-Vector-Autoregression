@@ -1,6 +1,6 @@
 # The Threshold Vector-autogression Program Package 
 
-This respository contains a Stata Threshold Vector Auto-regression program package.
+This Stata Threshold Vector Autoregression (TVAR) program package estimates the TVAR(2) model and implement a grid search for the optimal threshold parameter. 
 
 ## .Zip Remarks
 Since structure of file directories is important to the implementation of the package, programs are stored in a .zip file instead of uploading them individually.
